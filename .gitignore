@@ -1,32 +1,39 @@
-# Prerequisites
-*.d
+#includebitsstdc++.h
+using namespace std;
+int main()
+{
+    iossync_with_stdio(false);
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+   string card_number;
+   cincard_number;
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+   int sum=0;
+   for(int i=0;icard_number.size();i+=2)
+   {
+       if((card_number[i]-'0')29)
+       {
+           sum+=((card_number[i]-'0')2)-9;
+       }
+       else
+       {
+           sum+=(card_number[i]-'0')2;
+       }
+   }
 
-# Fortran module files
-*.mod
-*.smod
+    for(int i=1;icard_number.size();i+=2)
+    {
+       sum+=card_number[i]-'0';
+    }
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+    if(sum%10==0)
+    {
+        coutValid Card Number;
+    }
+    else
+    {
+        coutNot a Valid Card Number;
+    }
 
-# Executables
-*.exe
-*.out
-*.app
+
+}
