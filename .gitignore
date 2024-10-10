@@ -28,11 +28,11 @@ int main()
 
     if(sum%10==0)
     {
-        coutValid Card Number;
+        cout<<"Valid Card Number";
     }
     else
     {
-        coutNot a Valid Card Number;
+        cout<<"Not a Valid Card Number";
     }
 
 
