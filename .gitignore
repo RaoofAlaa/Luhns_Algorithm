@@ -1,27 +1,27 @@
-#includebitsstdc++.h
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-    iossync_with_stdio(false);
+    ios::sync_with_stdio(false);
 
    string card_number;
-   cincard_number;
+   cin>>card_number;
 
 
    int sum=0;
-   for(int i=0;icard_number.size();i+=2)
+   for(int i=0;i<card_number.size();i+=2)
    {
-       if((card_number[i]-'0')29)
+       if((card_number[i]-'0')*2>9)
        {
-           sum+=((card_number[i]-'0')2)-9;
+           sum+=((card_number[i]-'0')*2)-9;
        }
        else
        {
-           sum+=(card_number[i]-'0')2;
+           sum+=(card_number[i]-'0')*2;
        }
    }
 
-    for(int i=1;icard_number.size();i+=2)
+    for(int i=1;i<card_number.size();i+=2)
     {
        sum+=card_number[i]-'0';
     }
